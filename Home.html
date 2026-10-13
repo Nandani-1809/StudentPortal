@@ -1,228 +1,423 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Student Hub Portal | Home</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body{
-            background:#F0F8FF;
-            font-family:Arial,sans-serif;
-        }
-        nav{
-            display:flex;
-            justify-content:center;
-            flex-wrap:wrap;
-            gap:10px;
-            margin-top:20px;
-        }
-        nav a{
-            color:white;
-            text-decoration:none;
-            padding:10px 15px;
-            font-weight:bold;
-            transition:.3s;
-        }
-        nav a:hover{
-            background:white;
-            color:#2563EB;
-            border-radius:5px;
-        }
-        .hero img{
-            width:100%;
-            height:auto;
-            display:block;
-        }
-        .feature-grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-            gap:20px;
-            margin-top:30px;
-        }
-        .feature-card{
-            background:white;
-            padding:25px;
-            text-align:center;
-            border-radius:10px;
-            box-shadow:0 5px 15px rgba(0,0,0,.1);
-        }
-        .feature-card:hover{
-            transform:translateY(-5px);
-            transition:.3s;
-        }
-        footer{
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content:center;
-        }
-    </style>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body style="margin:0; background-color:#F0F8FF; font-family:Arial, sans-serif;">
-<!-- ================= HEADER ================= -->
+
 <header style="background-color:#2563EB; color:white; text-align:center; padding:20px;">
-    <img src="studenthublogo.png" alt="Student Hub Logo"
-         width="110" height="110">
+
+<div id="notificationBanner" class="notification-banner">
+
+    🎉 Welcome to Student Hub Portal!
+
+    <button
+        id="closeNotification"
+        type="button"
+        aria-label="Close notification">
+        ×
+    </button>
+
+</div>
+
+    <img src="studenthublogo.png"
+         alt="Student Hub Logo"
+         width="110"
+         height="110">
+
     <h1 style="margin:10px;">STUDENT HUB PORTAL</h1>
+
     <p>Connecting Students Through Technology</p>
-    <nav>
-<a href="Home.html">Home</a>
-<a href="AboutUs.html">About Us</a>
-<a href="Dashboard.html">Dashboard</a>
-<a href="Events.html">Events</a>
-<a href="FAQ.html">FAQ</a>
-<a href="Contact.html">Contact</a>
-<a href="Login.html">Login</a>
-<a href="Register.html">Register</a>
-<a href="Profile.html">Profile</a>
-</nav>
+
+    <nav style="margin-top:20px;">
+
+        <a href="Home.html"
+           style="color:white;text-decoration:none;padding:12px;">
+           Home
+        </a>
+
+        <a href="AboutUs.html"
+           style="color:white;text-decoration:none;padding:12px;">
+           About Us
+        </a>
+
+        <a href="Dashboard.html"
+           style="color:white;text-decoration:none;padding:12px;">
+           Dashboard
+        </a>
+
+        <a href="Events.html"
+           style="color:white;text-decoration:none;padding:12px;">
+           Events
+        </a>
+
+        <a href="FAQ.html"
+           style="color:white;text-decoration:none;padding:12px;">
+           FAQ
+        </a>
+
+        <a href="Contact.html"
+           style="color:white;text-decoration:none;padding:12px;">
+           Contact
+        </a>
+
+        <a href="Login.html"
+           style="color:white;text-decoration:none;padding:12px;">
+           Login
+        </a>
+
+        <a href="Register.html"
+           style="color:white;text-decoration:none;padding:12px;">
+           Register
+        </a>
+
+        <a href="Profile.html"
+           style="color:white;text-decoration:none;padding:12px;">
+           Profile
+        </a>
+
+    </nav>
+
 </header>
-<!-- ================= HERO ================= -->
-<section class="hero">
-<img src="banner.png"
-alt="Student Hub Banner">
+
+
+<section>
+
+    <img src="banner.png"
+         alt="Student Hub Banner"
+         width="100%">
+
 </section>
+
+
 <!-- ================= WELCOME SECTION ================= -->
-<section class="container text-center py-5">
-    <h2 style="color:#1E3A8A; margin-bottom:20px;">
+
+<section style="text-align:center;padding:40px;">
+
+    <h2 style="color:#1E3A8A;">
         Welcome to Student Hub Portal
     </h2>
-    <p style="
-        font-size:18px;
-        max-width:900px;
-        margin:auto;
-        line-height:30px;
-    ">
+
+    <p style="font-size:18px; width:80%; margin:auto; line-height:30px;">
+
         Student Hub Portal is a modern platform designed for students to access
         academic information, register for events, receive announcements,
         manage profiles and stay connected with their institution anytime,
         anywhere.
+
     </p>
-    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
-        <a href="Register.html">
-            <button class="btn"
-            style="
-            background:#2563EB;
-            color:white;
-            padding:12px 35px;
-            font-size:18px;
-            border-radius:5px;
-            border:none;
-            ">
-                Register Now
-            </button>
-        </a>
-        <a href="Login.html">
-            <button class="btn"
-            style="
-            background:#16A34A;
-            color:white;
-            padding:12px 45px;
-            font-size:18px;
-            border-radius:5px;
-            border:none;
-            ">
-                Login
-            </button>
-        </a>
-    </div>
-</section>
+
     <br>
-<!-- ================= FEATURES ================= -->
-<section style="background:white;padding:30px;">
-<h2 style="text-align:center;color:#1E3A8A;">
-Why Choose Student Hub?
-</h2>
-<table width="100%" cellpadding="20">
-<tr align="center">
-<td>
-<h3>📚 Learning</h3>
-<p>Access study resources and important academic information.</p>
-</td>
-<td>
-<h3>📅 Events</h3>
-<p>Register and participate in college activities easily.</p>
-</td>
-<td>
-<h3>👤 Profile</h3>
-<p>Manage your personal and academic profile securely.</p>
-</td>
-<td>
-<h3>📢 Notices</h3>
-<p>Stay updated with the latest college announcements.</p>
-</td>
-</tr>
-</table>
+
+    <a href="Register.html">
+
+        <button style="background:#2563EB;
+                       color:white;
+                       border:none;
+                       padding:12px 30px;
+                       font-size:18px;
+                       cursor:pointer;">
+
+            Register Now
+
+        </button>
+
+    </a>
+
+    &nbsp;&nbsp;
+
+    <a href="Login.html">
+
+        <button style="background:#16A34A;
+                       color:white;
+                       border:none;
+                       padding:12px 30px;
+                       font-size:18px;
+                       cursor:pointer;">
+
+            Login
+
+        </button>
+
+    </a>
+
 </section>
-<!-- ================= EVENTS ================= -->
-<section style="padding:30px;">
-<h2 align="center" style="color:#1E3A8A;">
-Upcoming Events
+
+
+<!-- ================= FEATURES ================= -->
+
+<section style="background:white;padding:30px;">
+
+<h2 style="text-align:center;color:#1E3A8A;">
+
+Why Choose Student Hub?
+
 </h2>
+
+<table width="100%" cellpadding="20">
+
+<tr align="center">
+
+<td>
+
+<h3>📚 Learning</h3>
+
+<p>
+Access study resources and important academic information.
+</p>
+
+</td>
+
+<td>
+
+<h3>📅 Events</h3>
+
+<p>
+Register and participate in college activities easily.
+</p>
+
+</td>
+
+<td>
+
+<h3>👤 Profile</h3>
+
+<p>
+Manage your personal and academic profile securely.
+</p>
+
+</td>
+
+<td>
+
+<h3>📢 Notices</h3>
+
+<p>
+Stay updated with the latest college announcements.
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+</section>
+
+
+<!-- ================= EVENTS ================= -->
+
+<section style="padding:30px;">
+
+<h2 align="center" style="color:#1E3A8A;">
+
+Upcoming Events
+
+</h2>
+
 <table border="1"
        width="80%"
        align="center"
        cellpadding="12"
        style="background:white;border-collapse:collapse;">
+
 <tr bgcolor="#2563EB" style="color:white;">
+
 <th>Event</th>
+
 <th>Date</th>
+
 <th>Venue</th>
+
 </tr>
+
 <tr>
+
 <td>Hackathon 2026</td>
+
 <td>25 July</td>
+
 <td>Seminar Hall</td>
+
 </tr>
+
 <tr>
+
 <td>Web Development Workshop</td>
+
 <td>30 July</td>
+
 <td>Computer Lab</td>
+
 </tr>
+
 <tr>
+
 <td>Sports Meet</td>
+
 <td>12 August</td>
+
 <td>College Ground</td>
+
 </tr>
+
 </table>
+
 </section>
-<!-- ================= NOTICES ================= -->
+
+
+<!-- ================= LATEST NOTICES ================= -->
+
 <section style="background:white;padding:30px;">
+
 <h2 align="center" style="color:#1E3A8A;">
+
 Latest Notices
+
 </h2>
+
 <ul style="font-size:18px;line-height:35px;">
+
 <li>Semester classes begin from 6 July.</li>
+
 <li>Assignment submission closes this Friday.</li>
+
 <li>Library timing has been extended till 8 PM.</li>
+
 <li>Scholarship applications are now open.</li>
+
 </ul>
+
 </section>
+
+
 <!-- ================= ANNOUNCEMENTS ================= -->
+
 <section style="padding:30px;">
+
 <h2 align="center" style="color:#1E3A8A;">
+
 Announcements
+
 </h2>
+
 <marquee>
+
 🎉 Coding Competition Registration Open |
+
 📢 Workshop on Artificial Intelligence |
+
 🏆 Annual Sports Day Coming Soon
+
 </marquee>
+
 </section>
-<!-- ================= FOOTER ================= -->
+
+
+<section class="slider-section">
+
+    <h2>Student Hub Highlights</h2>
+
+    <div class="slider">
+
+        <div class="slide active-slide">
+
+            <h3>📚 Study Resources</h3>
+
+            <p>
+
+                Access notes, assignments and learning materials.
+
+            </p>
+
+        </div>
+
+
+        <div class="slide">
+
+            <h3>📅 Student Events</h3>
+
+            <p>
+
+                Discover workshops, competitions and campus events.
+
+            </p>
+
+        </div>
+
+
+        <div class="slide">
+
+            <h3>👤 Student Profile</h3>
+
+            <p>
+
+                Manage your academic and personal information.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="slider-buttons">
+
+        <button
+            id="prevSlide"
+            type="button">
+
+            ← Previous
+
+        </button>
+
+        <button
+            id="nextSlide"
+            type="button">
+
+            Next →
+
+        </button>
+
+    </div>
+
+</section>
+
+
 <footer style="background:#1E3A8A;
 color:white;
 text-align:center;
 padding:20px;">
+
 <h3>Student Hub Portal</h3>
+
 <p>
-Home |About Us |Events |FAQ |Contact
+
+Home | About Us | Events | FAQ | Contact
+
 </p>
+
 <p>
+
 &copy; 2026 Student Hub Portal | All Rights Reserved
+
 </p>
+
 </footer>
+
+
+<script src="script.js"></script>
+
 </body>
+
 </html>

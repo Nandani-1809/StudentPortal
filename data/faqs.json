@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "How can I register for an event?",
+    "answer": "Open the Events page and select the event you want to attend. Follow the registration instructions provided there.",
+    "category": "Events"
+  },
+  {
+    "id": 2,
+    "question": "Where can I see upcoming events?",
+    "answer": "Upcoming events are displayed on the Home page and Events page.",
+    "category": "Events"
+  },
+  {
+    "id": 3,
+    "question": "How can I update my profile?",
+    "answer": "Open the Profile page and update the required information in your profile.",
+    "category": "Profile"
+  },
+  {
+    "id": 4,
+    "question": "How can I create a student account?",
+    "answer": "Go to the Register page and complete the registration form with valid details.",
+    "category": "Account"
+  },
+  {
+    "id": 5,
+    "question": "How can I log in?",
+    "answer": "Open the Login page and enter your registered email and password.",
+    "category": "Account"
+  },
+  {
+    "id": 6,
+    "question": "Can I search for events?",
+    "answer": "Yes. Use the search box in the Practical 6 data explorer to search event information.",
+    "category": "Events"
+  },
+  {
+    "id": 7,
+    "question": "Can I filter student records?",
+    "answer": "Yes. Select the Students dataset and use the filter dropdown to filter students by course.",
+    "category": "Students"
+  },
+  {
+    "id": 8,
+    "question": "What is Fetch API?",
+    "answer": "Fetch API is a JavaScript interface used to request resources such as JSON data from a server.",
+    "category": "Technical"
+  },
+  {
+    "id": 9,
+    "question": "What is JSON?",
+    "answer": "JSON is a lightweight data format commonly used for storing and exchanging structured data.",
+    "category": "Technical"
+  },
+  {
+    "id": 10,
+    "question": "How is JSON data loaded?",
+    "answer": "The application uses the Fetch API to request the JSON file and response.json() to parse the response.",
+    "category": "Technical"
+  },
+  {
+    "id": 11,
+    "question": "What is pagination?",
+    "answer": "Pagination divides a large set of records into smaller pages so that only a limited number of records are displayed at a time.",
+    "category": "Technical"
+  },
+  {
+    "id": 12,
+    "question": "Can I sort the displayed data?",
+    "answer": "Yes. The Practical 6 data explorer provides A to Z and Z to A sorting options.",
+    "category": "Technical"
+  },
+  {
+    "id": 13,
+    "question": "What should I do if JSON data fails to load?",
+    "answer": "Check that the JSON file is present in the data folder and that the project is being run using a local server.",
+    "category": "Troubleshooting"
+  },
+  {
+    "id": 14,
+    "question": "Can the application work with cached data?",
+    "answer": "Yes. The Practical 6 implementation stores successfully fetched data in localStorage for temporary caching.",
+    "category": "Technical"
+  },
+  {
+    "id": 15,
+    "question": "Where can I find student information?",
+    "answer": "Select the Students dataset in the Practical 6 data explorer to view student records.",
+    "category": "Students"
+  }
+]

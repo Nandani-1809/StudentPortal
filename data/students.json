@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Patel",
+    "course": "CSE",
+    "year": "2nd Year",
+    "city": "Anand"
+  },
+  {
+    "id": 2,
+    "name": "Nandani Shah",
+    "course": "CSE",
+    "year": "2nd Year",
+    "city": "Vadodara"
+  },
+  {
+    "id": 3,
+    "name": "Riya Mehta",
+    "course": "IT",
+    "year": "2nd Year",
+    "city": "Ahmedabad"
+  },
+  {
+    "id": 4,
+    "name": "Dhruv Patel",
+    "course": "CSE",
+    "year": "1st Year",
+    "city": "Nadiad"
+  },
+  {
+    "id": 5,
+    "name": "Kavya Desai",
+    "course": "CE",
+    "year": "3rd Year",
+    "city": "Surat"
+  },
+  {
+    "id": 6,
+    "name": "Yash Shah",
+    "course": "CSE",
+    "year": "3rd Year",
+    "city": "Ahmedabad"
+  },
+  {
+    "id": 7,
+    "name": "Meera Joshi",
+    "course": "IT",
+    "year": "1st Year",
+    "city": "Vadodara"
+  },
+  {
+    "id": 8,
+    "name": "Harsh Patel",
+    "course": "CSE",
+    "year": "2nd Year",
+    "city": "Rajkot"
+  },
+  {
+    "id": 9,
+    "name": "Isha Shah",
+    "course": "CE",
+    "year": "2nd Year",
+    "city": "Anand"
+  },
+  {
+    "id": 10,
+    "name": "Vedant Mehta",
+    "course": "CSE",
+    "year": "4th Year",
+    "city": "Surat"
+  },
+  {
+    "id": 11,
+    "name": "Krisha Patel",
+    "course": "IT",
+    "year": "3rd Year",
+    "city": "Nadiad"
+  },
+  {
+    "id": 12,
+    "name": "Parth Desai",
+    "course": "CSE",
+    "year": "1st Year",
+    "city": "Vadodara"
+  },
+  {
+    "id": 13,
+    "name": "Mahi Shah",
+    "course": "CE",
+    "year": "4th Year",
+    "city": "Ahmedabad"
+  },
+  {
+    "id": 14,
+    "name": "Karan Joshi",
+    "course": "CSE",
+    "year": "3rd Year",
+    "city": "Rajkot"
+  },
+  {
+    "id": 15,
+    "name": "Tanvi Mehta",
+    "course": "IT",
+    "year": "2nd Year",
+    "city": "Anand"
+  }
+]

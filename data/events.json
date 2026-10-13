@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Hackathon 2026",
+    "date": "2026-10-07",
+    "venue": "CSPIT Auditorium",
+    "category": "Hackathon"
+  },
+  {
+    "id": 2,
+    "name": "Web Development Workshop",
+    "date": "2026-10-12",
+    "venue": "A7 Building",
+    "category": "Workshop"
+  },
+  {
+    "id": 3,
+    "name": "Sports Meet 2026",
+    "date": "2026-10-15",
+    "venue": "University Ground",
+    "category": "Sports"
+  },
+  {
+    "id": 4,
+    "name": "AI and Machine Learning Seminar",
+    "date": "2026-10-18",
+    "venue": "CSPIT Seminar Hall",
+    "category": "Seminar"
+  },
+  {
+    "id": 5,
+    "name": "Cyber Security Awareness",
+    "date": "2026-10-20",
+    "venue": "A3 Building",
+    "category": "Seminar"
+  },
+  {
+    "id": 6,
+    "name": "Coding Contest",
+    "date": "2026-10-22",
+    "venue": "Computer Lab 3",
+    "category": "Competition"
+  },
+  {
+    "id": 7,
+    "name": "C++ Programming Workshop",
+    "date": "2026-10-25",
+    "venue": "Computer Lab 1",
+    "category": "Workshop"
+  },
+  {
+    "id": 8,
+    "name": "Entrepreneurship Talk",
+    "date": "2026-10-27",
+    "venue": "Main Auditorium",
+    "category": "Seminar"
+  },
+  {
+    "id": 9,
+    "name": "Photography Competition",
+    "date": "2026-10-29",
+    "venue": "Student Activity Center",
+    "category": "Competition"
+  },
+  {
+    "id": 10,
+    "name": "Tech Quiz",
+    "date": "2026-11-02",
+    "venue": "A5 Building",
+    "category": "Competition"
+  },
+  {
+    "id": 11,
+    "name": "Cloud Computing Workshop",
+    "date": "2026-11-05",
+    "venue": "Computer Lab 2",
+    "category": "Workshop"
+  },
+  {
+    "id": 12,
+    "name": "Annual Cultural Fest",
+    "date": "2026-11-10",
+    "venue": "University Ground",
+    "category": "Cultural"
+  },
+  {
+    "id": 13,
+    "name": "Cyber Security Hackathon",
+    "date": "2026-11-15",
+    "venue": "CSPIT Auditorium",
+    "category": "Hackathon"
+  },
+  {
+    "id": 14,
+    "name": "Career Guidance Session",
+    "date": "2026-11-18",
+    "venue": "Seminar Hall",
+    "category": "Career"
+  },
+  {
+    "id": 15,
+    "name": "Git and GitHub Workshop",
+    "date": "2026-11-22",
+    "venue": "Computer Lab 4",
+    "category": "Workshop"
+  }
+]
