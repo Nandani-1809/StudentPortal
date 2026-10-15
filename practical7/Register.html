@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub Portal | Register</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<header>
+
+    <img src="studenthublogo.png"
+         alt="Student Hub Logo"
+         width="110"
+         height="110">
+
+    <h1>STUDENT HUB PORTAL</h1>
+
+    <p>Connecting Students Through Technology</p>
+    <div class="top-controls">
+
+        <button id="themeToggle" type="button">
+            🌙 Dark Mode
+        </button>
+
+       <button
+    id="menuToggle"
+    type="button"
+    aria-label="Toggle navigation"
+    aria-expanded="false">
+    ☰
+        </button>
+    </div>
+    <nav>
+
+        <a href="Home.html">Home</a>
+
+        <a href="AboutUs.html">About Us</a>
+
+        <a href="Dashboard.html">Dashboard</a>
+
+        <a href="Events.html">Events</a>
+
+        <a href="FAQ.html">FAQ</a>
+
+        <a href="Contact.html">Contact</a>
+
+        <a href="Login.html">Login</a>
+
+        <a href="Register.html" class="active">Register</a>
+
+        <a href="Profile.html">Profile</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= NOTIFICATION BANNER ================= -->
+
+<div
+    id="notificationBanner"
+    class="notification-banner">
+
+    🎉 Welcome to Student Hub Portal!
+
+    <button
+        id="closeNotification"
+        type="button"
+        aria-label="Close notification">
+        ×
+    </button>
+
+</div>
+
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-title">
+
+    <img src="images/register.png"
+         alt="Register"
+         width="140"
+         height="140">
+
+    <h2>Student Registration</h2>
+
+    <p>
+        Complete the registration form below to create
+        your Student Hub account.
+    </p>
+
+</section>
+
+
+<!-- ================= REGISTRATION FORM ================= -->
+
+<section class="registration-section">
+
+  <form id="registrationForm"
+      action="process.php"
+      method="POST">
+
+        <h2>Registration Form</h2>
+
+
+        <!-- FIRST NAME -->
+
+        <div class="form-group">
+
+            <label for="firstName">First Name</label>
+
+            <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Enter your first name"
+            >
+
+            <span
+                class="error"
+                id="firstNameError">
+            </span>
+
+        </div>
+
+
+        <!-- LAST NAME -->
+
+        <div class="form-group">
+
+            <label for="lastName">Last Name</label>
+
+            <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Enter your last name"
+            >
+
+            <span
+                class="error"
+                id="lastNameError">
+            </span>
+
+        </div>
+
+
+        <!-- ENROLLMENT NUMBER -->
+
+        <div class="form-group">
+
+            <label for="enrollment">
+                Enrollment Number
+            </label>
+
+            <input
+                type="text"
+                id="enrollment"
+                name="enrollment"
+                placeholder="Example: 25CS001"
+                maxlength="7"
+                oninput="this.value = this.value.toUpperCase()"
+            >
+
+            <span
+                class="error"
+                id="enrollmentError">
+            </span>
+
+        </div>
+
+
+        <!-- EMAIL -->
+
+        <div class="form-group">
+
+            <label for="email">
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+            >
+
+            <span
+                class="error"
+                id="emailError">
+            </span>
+
+        </div>
+
+
+        <!-- MOBILE NUMBER -->
+
+        <div class="form-group">
+
+            <label for="mobile">
+                Mobile Number
+            </label>
+
+            <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="Enter 10-digit mobile number"
+                maxlength="10"
+            >
+
+            <span
+                class="error"
+                id="mobileError">
+            </span>
+
+        </div>
+
+
+        <!-- DATE OF BIRTH -->
+
+        <div class="form-group">
+
+            <label for="dob">
+                Date of Birth
+            </label>
+
+            <input
+                type="date"
+                id="dob"
+                name="dob"
+            >
+
+            <span
+                class="error"
+                id="dobError">
+            </span>
+
+        </div>
+
+
+        <!-- GENDER -->
+
+        <fieldset>
+
+            <legend>Gender</legend>
+
+            <div class="radio-group">
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Male">
+
+                    Male
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Female">
+
+                    Female
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Other">
+
+                    Other
+
+                </label>
+
+            </div>
+
+            <span
+                class="error"
+                id="genderError">
+            </span>
+
+        </fieldset>
+
+
+        <!-- DEPARTMENT -->
+
+        <div class="form-group">
+
+            <label for="course">
+                Department
+            </label>
+
+            <select
+                id="course"
+                name="course">
+
+                <option value="">
+                    -- Select Department --
+                </option>
+
+                <option value="Computer Engineering">
+                    Computer Engineering
+                </option>
+
+                <option value="Information Technology">
+                    Information Technology
+                </option>
+
+                <option value="Mechanical Engineering">
+                    Mechanical Engineering
+                </option>
+
+                <option value="Civil Engineering">
+                    Civil Engineering
+                </option>
+
+                <option value="Electrical Engineering">
+                    Electrical Engineering
+                </option>
+
+            </select>
+
+            <span
+                class="error"
+                id="courseError">
+            </span>
+
+        </div>
+
+
+        <!-- YEAR -->
+
+        <div class="form-group">
+
+            <label for="year">
+                Year
+            </label>
+
+            <select
+                id="year"
+                name="year">
+
+                <option value="">
+                    -- Select Year --
+                </option>
+
+                <option value="1">
+                    First Year
+                </option>
+
+                <option value="2">
+                    Second Year
+                </option>
+
+                <option value="3">
+                    Third Year
+                </option>
+
+                <option value="4">
+                    Fourth Year
+                </option>
+
+            </select>
+
+            <span
+                class="error"
+                id="yearError">
+            </span>
+
+        </div>
+
+
+        <!-- PASSWORD -->
+
+        <div class="form-group">
+
+            <label for="password">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a strong password"
+            >
+
+            <div class="strength-container">
+
+                <div id="strengthBar"></div>
+
+            </div>
+
+            <span
+                class="strength-text"
+                id="strengthText">
+            </span>
+
+            <span
+                class="error"
+                id="passwordError">
+            </span>
+
+        </div>
+
+
+        <!-- CONFIRM PASSWORD -->
+
+        <div class="form-group">
+
+            <label for="confirmPassword">
+                Confirm Password
+            </label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Re-enter your password"
+            >
+
+            <span
+                class="error"
+                id="confirmPasswordError">
+            </span>
+
+        </div>
+
+
+        <!-- TERMS -->
+
+        <div class="terms">
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms">
+
+                I agree to the Terms and Conditions.
+
+            </label>
+
+            <span
+                class="error"
+                id="termsError">
+            </span>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="form-buttons">
+
+            <button type="submit">
+                Register
+            </button>
+
+            <button
+                type="reset"
+                class="clear-button">
+
+                Clear
+
+            </button>
+
+        </div>
+
+
+        <!-- SUCCESS MESSAGE -->
+
+        <div
+            class="success-message"
+            id="successMessage">
+        </div>
+
+    </form>
+
+</section>
+
+
+<!-- ================= BENEFITS ================= -->
+
+<section class="benefits-section">
+
+    <h2>Why Register?</h2>
+
+    <div class="benefits-container">
+
+        <div class="benefit-card study">
+
+            <h3>📚 Study Resources</h3>
+
+            <p>
+                Access notes, assignments and course material.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card events">
+
+            <h3>📅 Event Registration</h3>
+
+            <p>
+                Participate in workshops and competitions.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card profile">
+
+            <h3>👤 Student Profile</h3>
+
+            <p>
+                Manage all your academic information online.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq-section">
+
+    <h2>Frequently Asked Questions</h2>
+
+
+    <div class="faq-item">
+    <button
+    class="faq-question"
+    type="button"
+    aria-expanded="false">
+            What is Student Hub Portal?
+
+            <span>+</span>
+
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Student Hub Portal is a platform for students
+                to access resources, events and academic information.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <button
+            class="faq-question"
+            type="button">
+
+            Who can register?
+
+            <span>+</span>
+
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Students can register by providing their
+                academic and contact information.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <button
+            class="faq-question"
+            type="button">
+
+            Can I change my profile information?
+
+            <span>+</span>
+
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Yes, registered students can manage their
+                profile information.
+            </p>
+
+        </div>
+
+    </div>
+<div class="faq-item">
+
+    <button
+        class="faq-question"
+        type="button"
+        aria-expanded="false">
+
+        How do I register for Student Hub Portal?
+
+        <span>+</span>
+
+    </button>
+
+    <div class="faq-answer">
+
+        <p>
+            Fill in the registration form with your personal
+            and academic information, create a password,
+            and accept the Terms and Conditions.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="faq-item">
+
+    <button
+        class="faq-question"
+        type="button"
+        aria-expanded="false">
+
+        Can I participate in student events through the portal?
+
+        <span>+</span>
+
+    </button>
+
+    <div class="faq-answer">
+
+        <p>
+            Yes, students can discover workshops, competitions
+            and other campus events through the Student Hub Portal.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="faq-item">
+
+    <button
+        class="faq-question"
+        type="button"
+        aria-expanded="false">
+
+        What resources are available for students?
+
+        <span>+</span>
+
+    </button>
+
+    <div class="faq-answer">
+
+        <p>
+            Students can access study notes, assignments,
+            learning materials, events and profile management
+            facilities.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+</section>
+
+
+<!-- ================= MODAL ================= -->
+
+<section class="modal-section">
+
+    <button
+        id="openModal"
+        class="modal-button"
+        type="button">
+
+        View Student Hub Information
+
+    </button>
+
+</section>
+
+
+<div
+    id="infoModal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle">
+
+    <div class="modal-content">
+
+        <button
+            id="closeModal"
+            class="close-modal"
+            type="button"
+            aria-label="Close modal">
+
+            ×
+
+        </button>
+
+        <h2 id="modalTitle">
+            Student Hub Portal
+        </h2>
+
+        <p>
+            Student Hub provides students with access to
+            study resources, events and profile management
+            facilities.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ================= CONTENT SLIDER ================= -->
+
+<section class="slider-section">
+
+    <h2>Student Hub Features</h2>
+
+
+    <div class="slider">
+
+        <div class="slide active-slide">
+
+            <h3>📚 Study Resources</h3>
+
+            <p>
+                Access notes, assignments and learning materials.
+            </p>
+
+        </div>
+
+
+        <div class="slide">
+
+            <h3>📅 Student Events</h3>
+
+            <p>
+                Discover workshops, competitions and campus events.
+            </p>
+
+        </div>
+
+
+        <div class="slide">
+
+            <h3>👤 Student Profile</h3>
+
+            <p>
+                Manage your academic and personal information.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="slider-buttons">
+
+        <button
+            id="prevSlide"
+            type="button">
+
+            Previous
+
+        </button>
+
+
+        <button
+            id="nextSlide"
+            type="button">
+
+            Next
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>Student Hub Portal</h3>
+
+    <p>
+
+        <a href="Home.html">Home</a> |
+
+        <a href="AboutUs.html">About Us</a> |
+
+        <a href="Events.html">Events</a> |
+
+        <a href="FAQ.html">FAQ</a> |
+
+        <a href="Contact.html">Contact</a>
+
+    </p>
+
+    <p>
+        &copy; 2026 Student Hub Portal |
+        All Rights Reserved
+    </p>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
