@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fb;
+    color: #1f2937;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 25px 18px;
+    background: #172554;
+    color: white;
+}
+
+.sidebar h2 {
+    margin: 0 0 12px;
+    font-size: 23px;
+}
+
+.user-role {
+    color: #bfdbfe;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 28px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar nav a {
+    color: white;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.sidebar nav a:hover {
+    background: #1d4ed8;
+    text-decoration: none;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.topbar h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+}
+
+.topbar p {
+    margin: 0;
+    color: #64748b;
+}
+
+.role-badge {
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-radius: 20px;
+    padding: 9px 14px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.stat-card,
+.table-card {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.06);
+}
+
+.stat-card h3 {
+    margin: 0 0 14px;
+    font-size: 15px;
+    color: #64748b;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+.table-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 550px;
+}
+
+th,
+td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+th {
+    background: #eff6ff;
+    color: #1e3a8a;
+}
+
+tr:hover td {
+    background: #f8fafc;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #dbeafe, #f8fafc);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(15, 23, 42, 0.1);
+}
+
+.login-card h1 {
+    margin-top: 0;
+    color: #1e3a8a;
+}
+
+.login-card > p {
+    color: #64748b;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-card label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button,
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 16px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 12px;
+}
+
+button:hover,
+.btn:hover {
+    background: #1d4ed8;
+    color: white;
+    text-decoration: none;
+}
+
+.error {
+    color: #b91c1c !important;
+    background: #fee2e2;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.message {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 1000px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 18px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

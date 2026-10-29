@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 13 | Student Hub Events CRUD</title>
+    <link rel="stylesheet" href="practical13.css">
+</head>
+<body>
+<header class="site-header">
+    <p class="eyebrow">STUDENT HUB PORTAL · PRACTICAL 13</p>
+    <h1>Event Management</h1>
+    <p>Create, view, edit and delete college events using Fetch API, PHP and MySQL.</p>
+</header>
+<main class="page-wrap">
+    <section class="page-intro">
+        <h2>College Events</h2>
+        <p>Event data is loaded from the MySQL database through <code>api.php</code>. Changes are saved to the database.</p>
+    </section>
+
+    <section class="filter-panel" aria-label="Search and filter events">
+        <label>Search events
+            <input type="search" id="searchEvent" placeholder="Search name, venue or category...">
+        </label>
+        <label>Category
+            <select id="categoryFilter"><option value="">All Categories</option></select>
+        </label>
+        <label>Sort by
+            <select id="sortEvent">
+                <option value="date-asc">Date: earliest first</option>
+                <option value="date-desc">Date: latest first</option>
+                <option value="name-asc">Event name: A–Z</option>
+                <option value="name-desc">Event name: Z–A</option>
+            </select>
+        </label>
+    </section>
+
+    <section class="table-panel" aria-labelledby="eventsHeading">
+        <h2 id="eventsHeading">Events in Database</h2>
+        <div class="table-scroll">
+            <table id="eventsTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Event</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Venue</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="eventsTableBody">
+                    <tr><td colspan="5">Loading events...</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="pagination" class="crud-pagination"></div>
+    </section>
+
+</main>
+<footer class="site-footer">Student Hub Portal</footer>
+<script src="script.js"></script>
+</body>
+</html>

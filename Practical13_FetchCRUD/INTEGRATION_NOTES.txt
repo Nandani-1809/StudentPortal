@@ -1,0 +1,40 @@
+PRACTICAL 13 - HOW TO ADD THIS TO YOUR EXISTING STUDENT HUB PORTAL
+
+IMPORTANT: Do not replace your existing site's main style.css or general script.js with the files in this folder. Your existing script.js has theme, menu, notification, FAQ, modal and slider features. The standalone Practical 13 example below uses its own script.js only inside this folder.
+
+A) DATABASE SETUP
+1. Copy the Practical13_FetchCRUD folder to C:\xampp\htdocs\ so the folder is C:\xampp\htdocs\Practical13_FetchCRUD\.
+2. Start Apache and MySQL from XAMPP Control Panel.
+3. Open http://localhost/phpmyadmin/ in your browser.
+4. Select Import, choose Practical13_FetchCRUD\schema.sql, then click Import/Go.
+5. db.php is configured for localhost, user root, blank password, database student_hub_portal. If your MySQL login differs, update those values in db.php.
+
+B) TEST THE PRACTICAL AS A STANDALONE PAGE
+1. Visit http://localhost/Practical13_FetchCRUD/index.html (do not double-click the HTML file or use file:///).
+2. The page should load 15 sample events from MySQL.
+3. Test Search, Category, and Sort.
+4. Test Add Event, Edit, and Delete. Refresh the page; successful changes should remain in the database.
+
+C) CONNECT IT TO YOUR EXISTING PORTAL
+1. Copy api.php, schema.sql and practical13.css into your existing Student Portal project root (the same folder as Home.html and Events.html). Do not overwrite your existing style.css, general script.js, db.php or an existing api.php.
+   - If your portal already has db.php, copy this package's db.php into the root under the new name practical13_db.php. api.php automatically uses practical13_db.php when it exists. This avoids breaking your current login/practical database connection.
+   - If your portal already has api.php, save this package's api.php as events-api.php instead, then change API_URL in js/events-crud.js from "api.php" to "events-api.php" and change the fetch URL in js/home-events.js from "api.php" to "events-api.php".
+2. Copy js/events-crud.js and js/home-events.js into your existing project's js folder. If that folder does not exist, create it.
+3. In Events.html, keep the existing IDs searchEvent, categoryFilter, sortEvent, eventsTableBody and pagination. At the bottom of Events.html, replace the old event-data script line:
+       <script src="js/events.js"></script>
+   with:
+       <script src="script.js"></script>
+       <script src="js/events-crud.js"></script>
+   If script.js is already included on Events.html, do not add it a second time. The old js/events.js must not also load, because it would compete with the CRUD script and fetch events.json instead.
+4. Add this inside the <head> of both Home.html and Events.html if you want the extra form/table styling:
+       <link rel="stylesheet" href="practical13.css">
+   Your existing <link rel="stylesheet" href="style.css"> should remain.
+5. In Home.html, keep the existing Upcoming Events table. At the bottom, after your existing script.js line and before </body>, add:
+       <script src="js/home-events.js"></script>
+   The homepage preview reads up to three future events from the same API. The edit/delete/add controls stay on Events.html.
+6. Open the portal through a localhost URL, for example http://localhost/StudentPortal/Home.html. The exact folder name in the URL must match the folder name under C:\xampp\htdocs\.
+
+D) DATA / SECURITY NOTES
+- schema.sql includes the 15 events from the JSON records you shared. The SQL uses INSERT IGNORE so rerunning the seed insert does not duplicate those ID values.
+- The API currently allows CRUD for a local practical demonstration and does not implement admin login checks. Do not publish this version publicly without adding server-side session/role authorization to create, update and delete requests.
+- If you already have an events table with a different structure, back it up and compare its columns before importing this schema. It is safest to use the new student_hub_portal database for this practical. The API's connection file must point to that database.

@@ -1,0 +1,168 @@
+
+body {
+    margin: 0;
+    background-color: #F0F8FF;
+    font-family: Arial, sans-serif;
+    color: #1F2937;
+}
+
+.site-header {
+    background-color: #2563EB;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.site-header h1 {
+    margin: 10px;
+}
+
+.site-header nav {
+    margin-top: 20px;
+}
+
+.site-header nav a,
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.site-header nav a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    text-align: center;
+    padding: 30px;
+}
+
+.intro h2,
+.benefits h2,
+.help-section h2 {
+    color: #1E3A8A;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.login-section {
+    padding: 20px;
+}
+
+.login-table {
+    background: white;
+    width: min(90%, 650px);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+.login-table td {
+    padding: 12px;
+}
+
+.login-table input[type="email"],
+.login-table input[type="password"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+button,
+.logout-link {
+    background: #2563EB;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.clear-button {
+    background: #16A34A;
+}
+
+.error-message {
+    color: #B91C1C;
+    text-align: center;
+    font-weight: bold;
+}
+
+.help-section,
+.benefits {
+    padding: 30px;
+}
+
+.help-section h2,
+.benefits h2 {
+    text-align: center;
+}
+
+.help-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.help-grid > div {
+    background: white;
+    padding: 20px;
+    flex: 1 1 200px;
+    border-radius: 8px;
+}
+
+.benefits ul {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+}
+
+footer {
+    background: #1E3A8A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.dashboard {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+@media (max-width: 600px) {
+    .login-table {
+        width: 100%;
+    }
+
+    .login-table td {
+        display: block;
+    }
+
+    .site-header nav a {
+        padding: 6px;
+    }
+
+    .dashboard {
+        margin: 20px;
+        padding: 20px;
+    }
+}
